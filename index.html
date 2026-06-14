@@ -10,58 +10,62 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
+font-family:'Nirmala UI',sans-serif;
 }
 
 body{
-background:#f4f7fb;
+background:#f5f5f5;
 color:#222;
-line-height:1.6;
 }
 
-header{
-background:linear-gradient(135deg,#0f172a,#2563eb);
+.hero{
+background:linear-gradient(135deg,#001f54,#0a58ca);
 color:white;
 text-align:center;
 padding:60px 20px;
 }
 
-header h1{
-font-size:48px;
+.hero img{
+width:180px;
+border-radius:15px;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:50px;
 margin-bottom:10px;
 }
 
-header p{
-font-size:20px;
-opacity:0.9;
+.hero p{
+font-size:22px;
+margin-bottom:25px;
 }
 
 .btn{
 display:inline-block;
-margin-top:20px;
-padding:14px 28px;
-background:#22c55e;
+background:#ff9800;
 color:white;
+padding:15px 35px;
+border-radius:50px;
 text-decoration:none;
-border-radius:30px;
 font-weight:bold;
+font-size:20px;
 }
 
-.container{
-width:90%;
+.section{
+padding:50px 20px;
 max-width:1200px;
 margin:auto;
-padding:50px 0;
 }
 
 .section-title{
 text-align:center;
-font-size:32px;
+font-size:40px;
+color:#ff6f00;
 margin-bottom:30px;
-color:#0f172a;
 }
 
-.card-grid{
+.cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
@@ -71,65 +75,90 @@ gap:20px;
 background:white;
 padding:25px;
 border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,0.08);
-}
-
-.card h3{
-margin-bottom:10px;
-color:#2563eb;
-}
-
-.highlight{
-background:#fff7ed;
-padding:40px;
-border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 text-align:center;
 }
 
-.highlight h2{
-color:#ea580c;
+.card h3{
+color:#0a58ca;
 margin-bottom:15px;
 }
 
+.rajmudra{
+background:#fff8e1;
+text-align:center;
+padding:50px 20px;
+}
+
+.rajmudra img{
+width:250px;
+max-width:90%;
+margin-bottom:20px;
+}
+
+.gas{
+text-align:center;
+padding:50px 20px;
+}
+
+.gas img{
+width:250px;
+max-width:90%;
+border-radius:15px;
+}
+
 .contact{
-background:#0f172a;
+background:#001f54;
 color:white;
 text-align:center;
 padding:50px 20px;
 }
 
-.contact a{
-color:#22c55e;
+.contact h2{
+margin-bottom:15px;
+}
+
+.whatsapp{
+display:inline-block;
+margin-top:15px;
+background:#25D366;
+color:white;
+padding:15px 30px;
+border-radius:50px;
 text-decoration:none;
-font-size:20px;
 font-weight:bold;
 }
 
 footer{
-background:#020617;
-color:#ccc;
+background:#000;
+color:white;
 text-align:center;
-padding:15px;
+padding:20px;
 }
 </style>
 </head>
 
 <body>
 
-<header>
+<section class="hero">
+
+<img src="WhatsApp Image 2026-06-14 at 22.57.21 (1).jpeg">
+
 <h1>HELP ME SERVICES</h1>
+
 <p>You Call We Serve</p>
 
-<a class="btn"
-href="https://wa.me/917498097996">
-सदस्य बना / Join Now
+<a href="https://wa.me/917498097996" class="btn">
+सदस्य बना | Join Now
 </a>
-</header>
 
-<section class="container">
+</section>
+
+<section class="section">
+
 <h2 class="section-title">आमचे ध्येय</h2>
 
-<div class="card-grid">
+<div class="cards">
 
 <div class="card">
 <h3>महिला सक्षमीकरण</h3>
@@ -143,66 +172,66 @@ href="https://wa.me/917498097996">
 <div class="card">
 <h3>स्थानिक विकास</h3>
 <p>
-स्थानिक समाज, युवक आणि कुटुंबांना
-एकत्र घेऊन विकासाची नवी दिशा निर्माण करणे.
+स्थानिक समाज, युवक आणि
+व्यवसायांना नवी दिशा देऊन
+विकासाला गती देणे.
 </p>
 </div>
 
 <div class="card">
 <h3>सामाजिक बांधिलकी</h3>
 <p>
-सुरक्षा, जनजागृती आणि समाजहिताच्या
-उपक्रमांद्वारे सकारात्मक बदल घडवणे.
+सुरक्षा, जनजागृती आणि
+सामाजिक उपक्रमांद्वारे
+सकारात्मक बदल घडवणे.
 </p>
 </div>
 
 </div>
+
 </section>
 
-<section class="container">
-<div class="highlight">
-<h2>राजमुद्रेची प्रेरणा</h2>
-<p>
+<section class="rajmudra">
+
+<h2 class="section-title">राजमुद्रा प्रेरणा</h2>
+
+<img src="WhatsApp Image 2026-06-14 at 22.57.21 (2).jpeg">
+
+<p style="max-width:800px;margin:auto;font-size:18px;">
 छत्रपती शिवाजी महाराजांच्या स्वराज्य,
-स्वाभिमान आणि लोककल्याणाच्या विचारांनी प्रेरित
-होऊन समाजासाठी कार्य करण्याचा आमचा प्रयत्न आहे.
+जनकल्याण आणि स्वाभिमानाच्या विचारांतून
+प्रेरणा घेऊन समाजहितासाठी कार्य.
 </p>
-</div>
+
 </section>
 
-<section class="container">
+<section class="gas">
+
 <h2 class="section-title">Gas Safety Device</h2>
 
-<div class="card">
-<h3>घराची सुरक्षा, कुटुंबाची सुरक्षा</h3>
-
-<p>
-गॅस सुरक्षिततेबाबत जनजागृती करून
-प्रत्येक घर अधिक सुरक्षित करण्यासाठी
-आमचा प्रयत्न आहे.
+<p style="margin-bottom:20px;">
+घरगुती सुरक्षेसाठी आधुनिक सुरक्षा उपाय
 </p>
-</div>
+
 </section>
 
 <section class="contact">
+
 <h2>संपर्क</h2>
-<br>
 
-<p>मोबाईल / WhatsApp</p>
+<p>📞 7498097996</p>
 
-<a href="tel:7498097996">
-7498097996
+<p>WhatsApp वर संपर्क करा</p>
+
+<a class="whatsapp"
+href="https://wa.me/917498097996">
+WhatsApp Chat
 </a>
 
-<br><br>
-
-<a href="https://wa.me/917498097996">
-WhatsApp वर संपर्क करा
-</a>
 </section>
 
 <footer>
-© 2026 Help Me Services | You Call We Serve
+🚩 Help Me Services | सेवा • सुरक्षा • स्वावलंबन 🚩
 </footer>
 
 </body>
